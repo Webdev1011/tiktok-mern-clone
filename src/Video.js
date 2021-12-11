@@ -1,7 +1,16 @@
 import React, { useRef, useState } from "react";
 import "./Video.css";
 import VideoFooter from "./VideoFooter";
-function Video() {
+import VideoSidebar from "./VideoSidebar";
+const Video = ({
+  url,
+  channel,
+  description,
+  song,
+  likes,
+  messages,
+  shares,
+}) => {
   const [playing, setPlaying] = useState(false);
   const videoRef = useRef(null);
   const handleVideoPress = () => {
@@ -20,14 +29,14 @@ function Video() {
         loop
         ref={videoRef}
         className="video__player"
-        src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+        src={url}
       ></video>
-
-      <VideoFooter />
+      <VideoFooter channel={channel} description={description} song={song} />
+      <VideoSidebar likes={likes} shares={shares} messages={messages} />
       {/* VideoFooter */}
-      {/* VideoSidebar */}
+      {/* <VideoSidebar /> */}
     </div>
   );
-}
+};
 
 export default Video;
