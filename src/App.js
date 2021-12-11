@@ -7,7 +7,7 @@ function App() {
     <div className="app">
       <div className="app__videos">
         <Video
-          url="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+          url="https://girishkhemani.com/project_extra_materials/videos/sample_video.mp4"
           messages={333}
           likes={111}
           shares={222}
@@ -16,7 +16,7 @@ function App() {
           song="99 Problems but REACT aint one"
         />
         <Video
-          url="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+          url="https://girishkhemani.com/project_extra_materials/videos/sample_video2.mp4"
           messages={999}
           likes={235}
           shares={665}
