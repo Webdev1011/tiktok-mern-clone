@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="app">
       <div className="app__videos">
-        {videos.map((video) => {
+        {videos.map((video) => (
           <Video
             url={video.url}
             messages={video.messages}
@@ -28,8 +28,8 @@ function App() {
             channel={video.channel}
             description={video.description}
             song={video.song}
-          />;
-        })}
+          />
+        ))}
       </div>
       {/* app container */}
       {/* videos */}
